@@ -40,10 +40,10 @@
 		#documenter_sidebar #documenter_logo{background-image:url(assets/images/logo.png);}
 		a{color:#008C9E;}
 		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
-		#documenter_sidebar, #documenter_sidebar ol a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#1f2d30;color:#FFFFFF;}
 		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
 		#documenter_sidebar ol{border-top:1px solid #212424;}
-		#documenter_sidebar ol a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;text-align:left;margin-left:10px;}
+		#documenter_sidebar ol a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;text-align:left;padding-left:10px;}
 		#documenter_sidebar ol a:hover{background:#333636;color:#C5D52B;border-top:1px solid #333636;}
 		#documenter_sidebar ol a.current{background:#333636;color:#C5D52B;border-top:1px solid #333636;}
 		#documenter_copyright{display:block !important;visibility:visible !important;}
@@ -76,25 +76,31 @@
 				</a>
 			</li>
 			<li class="page-scroll">
+				<a href="#setting">
+					<i class="fa fa-gear margin"></i>
+					Setting 
+				</a>
+			</li>
+			<li class="page-scroll">
 				<a href="#dashboard">
 					<i class="fa fa-home margin"></i>
 					Dashboard
 				</a>
 			</li>
 			<li class="page-scroll">
-				<a href="#point">
+				<a href="#customer">
 					<i class="fa fa-shopping-cart margin"></i>
 					Customer
 				</a>
 			</li>
 			<li class="page-scroll">
-				<a href="#invoice">
+				<a href="#stocks">
 					<i class="fa fa-print margin"></i>
 					Stocks
 				</a>
 			</li>
 			<li class="page-scroll">
-				<a href="#giftcard">
+				<a href="#supplier">
 					<i class="fa fa-users margin"></i>
 					Suppliers 
 				</a>
@@ -129,10 +135,9 @@
 					Reports 
 				</a>
 			</li>
-
 		</ol>
 		<div id="documenter_copyright">
-		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		made with the <a href="http://rxa.li/documenter">Documenter v2.1</a> 
 		</div>
 	</div>
 	<div id="documenter_content">
@@ -166,28 +171,28 @@
 
 <!-- installation part start -->
 <section id="installation">
-	<h1>Process of Installation</h1><hr class="notop">
+	<h1>Installation Process</h1><hr class="notop">
 	<h3>Pre-Requirements</h3>
 	<ul>
 		<li class="vimportant">Internet connection(Mandatory)</li>
-		<li class="vimportant">Create a new database , Make sure database is completely blank</li>
-		<li class="vimportant">if you install it in subdirectory ,change the subdirectory value in config.php . <code>define('SUBDIRECTORY', 'modernpos');</code> </li>
+		<li class="vimportant">Create a new database , Make sure database is completely blank. Import the flexiblepos_db.sql in the created database without error.</li>
+		<li class="vimportant">if you install it in subdirectory ,change the subdirectory value in config.php . <code>define('SUBDIRECTORY', 'FlexiblePos');</code> </li>
 		<li>The maximum execution time of your server can't be less than 5 minutes. You may update php.ini file for this</li>
-		<li>To get Installation service from our Expert Support Team contact us at itsolution24bd@gmail.com </li>
+		<li>To get Installation service from our Expert Support Team contact us at flexibledesign01@gmail.com </li>
 	</ul>
 	<p>You have to follow this article carefully</p>
 	<h3>1st : Install a software according your Operating System</h3>
 	<h4>Installation of WAMP for Windows</h4>
 	<ul>
 		<li><a href="https://sourceforge.net/projects/wampserver/files/latest/download" target="_blank">Downlaod</a> and install WAMP software in your computer</li>
-		<li>Go to c: drive > WAMP folder> www folder > paste modernpos folder(This you will get in our package). </li>
+		<li>Go to c: drive > WAMP folder> www folder > paste FlexiblePos folder(This you will get in our package). </li>
 		<li>Run WAMP software</li>
 	</ul>
 
 	<h4>Installation of XAMPP for Windows</h4>
 	<ul>
 		<li><a href="https://sourceforge.net/projects/xampp/files/latest/download" target="_blank">Download</a> and <a href="https://premium.wpmudev.org/blog/setting-up-xampp/" target="_blank">install</a>  XAMPP software in your computer</li>
-		<li>Go to c: drive >XAMPP folder> htdocs folder > paste modernpos folder(This you will get in our package). </li>
+		<li>Go to c: drive >XAMPP folder> htdocs folder > paste FlexiblePos folder(This you will get in our package). </li>
 		<li>Run XAMPP software and start Apache and MySQL from XAMPP control panel</li>
 	</ul>
 
@@ -196,97 +201,72 @@
 	<ul>
 		<li>Go to the <a href="https://sourceforge.net/projects/mamp/files/latest/download">link </a> and download MAMP. Once the download is finished, open the downloaded file. Drag and drop the image file inside it to your Applications folder. </li>
 
-		<li>Paste modernpos folder (This you will get in our package) your MAMP document root folder </li>
+		<li>Paste FlexiblePos folder (This you will get in our package) your MAMP document root folder </li>
 		<li>Run MAMP</li>
 	</ul>
 	<h4>Installation of LAMP for Linux</h4>
 	<ul>		https://sourceforge.net/directory/?q=lamp%20server
 		<li>Go to the <a href="https://bitnami.com/redirect/to/583992/bitnami-lampstack-7.2.19-2-linux-x64-installer.run">link</a>  and download LAMP. Once the download is finished install it. </li>
 
-		<li>Paste modernpos folder (This you will get in our package) your LAMP document root folder </li>
+		<li>Paste FlexiblePos folder (This you will get in our package) your LAMP document root folder </li>
 		<li>Run LAMP</li>
 	</ul>
 
 	<h3>2nd : Follow this step</h3>
 	<ul>
-		<li>Visit <a href="http://localhost/modernpos/install" target="_blank">This link</a> here you will get Six step for installation.
-		<li>Visit  http://YOURDOMAIN.COM/modernpos/install ( if you install it on online server)
+		<li><em>You must need to import the flexiblepos_db.sql file in your newly created database.</em></li>
+		<li>Go to your project directory and Rename the database name, database user, database password in .env file.
+			<img src="assets/images/env_changes.jpg" alt="">
 		</li>
-		<li>
-			 STEP-01 : You can see a requirement list, after full-fill the requirement click Next.
-			 <img src="assets/images/1.png" alt="">
+		<li>Visit <a href="http://localhost/FlexiblePos/" target="_blank">This link</a> here you will get Login form, where you can login with user: <b>admin@flexibleit.net</b> pass: <b>password</b>.
+			<img src="assets/images/login.jpg" alt="">
 		</li>
-		
-		<li>
-			 STEP-02: <br>
-			a) Use your envato login username <br>
-			b) Use your product purchase code <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-">Where i will get this?</a><br>
-			<img src="assets/images/2.png" alt="">
+		<li>Visit  http://YOURDOMAIN.COM/( if you install it on online server). If you install sub directory then the directory is http://YOURDOMAIN.COM/subdirectory.
 		</li>
-
-		
-
-		<li>
-			 STEP-03: <br>
-			a) Provide Hostname localhost(if you are installing in your pc).<br>
-			b) Create a database(you have to create a database before starting the installation process)<br>
-			c) Provide database username.<br>
-			d) Provide database password.<br>
-			e) Database port (default is 3306, you can change if need)<br>
-			f) Next step
-			<img src="assets/images/3.png" alt="">
-			<p>It may take sometime</p>
-			<img src="assets/images/4.png" alt="">
-		</li>
-
-		<li>
-			 STEP-04:<br>
-			a) Select time zone of your country.<br>
-			b) Next step.
-			<img src="assets/images/5.png" alt="">
-			
-		</li>
-		<li>
-			 STEP-05:<br>
-			a) Your store name <br>
-			b) Your store contact number <br>
-			c) Give your username <br>
-			d) Give your password. <br>
-			e) Provide your shop address (this will be displayed on invoice).<br>
-			f) Next step.
-			<img src="assets/images/6.png" alt="">
-		</li>
-		<li> STEP-06: Your shop management software is ready. Here you will get three(3) user information with login credential. To login click on Login Now button.
-			<img src="assets/images/7.png" alt=""></li> 
+		<li>After Login You need to setup the Initial Settings for your software.</li>
 	</ul>
 	<p style="background-color:yellow;padding: 15px"><strong>Important:</strong>if you want to install this application inside custom directory/folder then go to config.php file at line number 61 and change the value of SUBDIRECTORY constant with your custom directory/folder name.</p>
 </section>
 <!-- installation part end -->
 
+<!-- setting part start -->
+<section id="setting">
+	<h1>Setting</h1><hr class="notop">
+	<p class="text-danger">**Before starting your application, you must need to setup the initial settings of your application.**</p>	
+	<p>Here you will be able to set currency, set previous balance, change company logo, company address, company name, language and user preference and many things.</p>
+	<img src="assets/images/setting.jpg" alt="">
+	
+</section>
+<!-- setting part end -->
 
 <!--Dashboard part start-->
 <section id="dashboard">
-	<p>This is the informative Dashboard, From here you will be able to do many work very easily</p>
 	<h1>Dashboard</h1>
-	<img class="img-responsive" src="assets/images/Home-dashboard.png">
+	<p>This is the informative Dashboard, From here you will be able to do many work very easily</p>
 	<ul>
 		<li>Have a look at our awesome Dashboard.</li>
-		<li>It will help you to show you about all the info's at a galance. You can see the numbers of employees, customersares, suppliers,
-		Expences, Items etc. in a look. </li>
+		<li>You will get sales/invoices and purchases/receivings in graph, how many sales and purchases you make in last 15 days</li>
+		<li>You will get stock alerts and expired products list here.</li>
+		<li>You will get your bank account summary here.</li>
+		<li>It will help you to show you about all the info's at a galance. You can see the numbers of employees, customers, suppliers, Latest Incomes, Latest expenses, Expences, Items etc. in a look. </li>
 	</ul>
+	<img class="img-responsive" src="assets/images/dashboard.png">
+	
 </section>
 <!--Dashboard part end-->
 
 
 <!-- POS part start -->
-<section id="point">
-	<h1>Point of sell</h1> 
-	<h3>Add customer</h3><hr class="notop">
+<section id="customer">
+	<h1>Customer</h1> 
+	<h3>Customer List</h3><hr class="notop">
 	<img src="assets/images/add-customer.png">
+	<h3>Add customer</h3><hr class="notop">
 	<ul>
 		<li> Click to the <span>New customer</span> on the right corner.</li>
 		<li> Provide all the necessary informations and click to the submit.</li>
 		<li> Your will see the customer in the customer dashbord. You can edit them also.</li>
+		<li>For watching the customer details just click on <span>View Profile</span></li>
 	</ul>
 </section>
 <!-- POS part end -->
@@ -310,7 +290,7 @@
 
 
 <!-- installment area start -->
-<section id="intstallment">
+<section id="supplier">
 	<h1>Supliers</h1> 
 	<p>From here you can manage your Suppliers.</p>
 
@@ -798,32 +778,6 @@
 </section>
 <!--Analysis  part End-->
 
-<!--SMS  part Start-->
-<section id="sms">
-	<h1>SMS</h1><hr class="notop">
-	<p>You can send SMS to your customer after create a invoice (Automatically or manually) also you will be able to send SMS to another person</p>
-	<h3>Send SMS</h3>
-	<ul>
-		<li> Dashboard > Send SMS</li>
-		<li> Here you will get two type SMS facilty Single SMS & Group SMS</li>
-		<li> For single SMS : give Mobile number & text and click on SEND button.</li>	
-		<li> For Group SMS : Select people category , Campaign name i.e. New Year Greetings, and Schedule date and time (It indicate SMS will send that time),  You will get a list in people section according go people category, Write your messege in Message area (don't clear the Hellow,[name] area) </li>	
-		<li>Click on SEND button</li>	
-	</ul>
-	<h3>SMS Report</h3>
-
-	<ul>
-		<li>Here you will SMS report in details</li>
-	</ul>
-	<h3>SMS Settings</h3>
-
-	<ul>
-		<li>According to SMS service provider fill-up the required filed, We are support these SMS gateway: Clickatell, twilio , msg91, OnnoRokomSMS. </li>
-		<li>Click on Update </li>
-	</ul>
-</section>
-<!-- SMS  part End-->
-
 <!--user part start-->
 <section id="user">
 	<h1>User</h1><hr class="notop">
@@ -879,136 +833,6 @@
 </section>
 <!-- Filemanager end -->
 
-<!-- setting part start -->
-<section id="setting">
-	<h1>Setting</h1><hr class="notop">
-	<p>Here you will be able to add payment method currency and user preference and many things.</p>
-	
-	<p>If you have more shop and if you are interested to manage more shop by using this software, it's completely possible and very easy</p>
-	<h3>Create new store</h3>
-	<ul>
-		<li> Dashboard > Settings > Store > Add Store</li>
-		<li> Fill the form by provide valid information</li>	
-		<li> Save</li>	
-	</ul>
-	<h3>Select a Store</h3>
-	<ul>
-		<li> Dashboard > Settings > Store > Store List</li>
-		<li> Here you will get all store list</li>	
-		<li> From that list click on active that you want to visit</li>	
-		<li> After successfully activate you will be able to see all the information in your activated shop</li>	
-	</ul>
-
-	<h3>Receipt Template</h3>
-	<p>Here you can redesign your invoice by edit code like any text and text color.</p>
-	<ul>
-		<li> Dashboard > Settings > Receipt Template </li>
-		<li> Selected template design will be generate when invoice will be create. </li>
-		<li> Click on template name and after click on template you will able to see two section of code,You can edit this for customize your invoice design.</li>
-		<li>In the bottom section you will get many template tag, You can use this key for sow that property in your invoice.</li>	
-		<li> Save</li>	
-	</ul>
-	<h3>User Preference</h3>
-	<ul>
-		<li> Dashboard > Setting > User preference</li>
-		<li> Select language, color theme, POS panel position, and POS window pattern</li>
-		<li> Update</li>	
-	</ul>
-	<h3>Brand</h3>
-	<ul>
-		<li> Dashboard > Setting > Brand</li>
-		<li> From here you can add brands name when you will crate a product.</li>
-		<li> From brand list you can update or delete any brand.</li>	
-	</ul>
-	<h3>Create New Currency</h3>
-	<ul>
-		<li> Dashboard > Setting > Currency > Add New Currency</li>
-		<li> Fill out the form by providing valid information. </li>	
-		<li> Save</li>	
-		<li> After successfully creating new currency will be shown under "currency list" section.</li>
-	</ul>
-
-	<h3>Activate Currency</h3>
-	<ul>
-		<li> Dashboard > Settings  > Currency > All currency will be shown under "Currency list"</li>
-		<li> Click on the activate button and confirm</li>
-	</ul>
-
-	<h3>Edit and Delete Currency</h3>
-	<ul>
-		<li> Dashboard > Settings  > Currency > All currency will be shown under "Currency list" section</li>
-		<li> Click on the edit button of a currency > a floating modal window will pop up > change information of currency > Update</li>
-		<li> Click on the delete button of a currency > a floating modal window will pop up > Choose method > delete</li>
-	</ul>
-
-		<h3>Add New Payment Method</h3>
-		<ul>
-			<li> Dashboard > Settings > Payment method > fill up the form under "Add new payment method" with valid information</li>
-			<li> Save</li>
-		</ul>
-		
-		<h3>Edit and Delete Payment Method</h3>
-		<ul>
-			<li> Dashboard > Settings > Payment method> all payment method will be shown under "Payment method list" section</li>
-			<li> Click on the edit button of a payment method  > a floating alert window will pop up > Click on Update</li>
-			<li> Click on the Delete button of a payment method  > a floating alert window will pop up >choose method > Click on Delete</li>
-		</ul>
-
-		<h3>Unit</h3>
-		<p>Unit means product unit i.e. Kg,piece. You can add unit when you will create a product or update. product unit will be show in invoice. </p>
-		<ul>
-			<li> Dashboard >Setting > Unit</li>
-			<li> Give the unit name.</li>
-			<li> Save</li>
-		</ul>
-
-		<h3>Tax Rate</h3>
-		<p>This Tax Rate is based on product. so you can select a Tax Rate when you will crate a product or update a product.</p>
-		<ul>
-			<li> Dashboard >Setting >Tax Rate</li>
-			<li> Fill the required information</li>
-			<li> Save</li>
-		</ul>
-		<h3>Create Box</h3>
-		<p>The box is important for every product, Box indicates the position of a product. You may call it box or Shelf (Where a product is located in your shop)</p>
-		<ul>
-			<li> Dashboard >Box > Add New Box</li>
-			<li> Give the box name(Location, Shelf shortcode or section name) and details.</li>
-			<li> Save</li>
-		</ul>
-
-		<h3>Printer Add</h3>
-		<p>If you want to use POS printer so this is for you. If you are not intested to use POS printer so just avoid this section.</p>
-		<ul>
-			<li> Dashboard > Settings > Printer > Add New Printer</li>
-			<li> Give the all information</li>
-			<li> Name: Give the title of your printer(Just name)</li>
-			<li> Type: Select the network type</li>
-			<li> Character per line: give the number of charcater that will print in a line on invoice</li>
-			<li> IP Address: Provide the IP address of your printer like 192.168.223.501</li>
-			<li> IP Address: Port of your printer use. (Most printer uses 9100 port)</li>
-			<li> Click on Save</li>
-			<li> After adding a printer go to store settings and select POS printer and choose print will be automatically or not.</li>
-		</ul>
-
-		<h3>Backup Data</h3>
-		<ul>
-			<li> Dashboard > Settings > Backup/restore > Backup tab</li>
-			<li> Click on Export button</li>
-			<li> An SQL file will download in your computer</li>
-			<li> Store this SQL file very carefully</li>
-			<li> Your shop data successfully backup.</li>
-		</ul>
-		<h3>Restore Data</h3>
-		<ul>
-			<li> Dashboard > Settings > Backup/restore > Restore tab </li>
-			<li> Click on Import button</li>
-			<li> Select your previous backup file(.sql)</li>
-			<li> After select restore process will start. It may take several minutes.</li>
-			<li> After complete restore process, A confirmation message will appear.</li>
-		</ul>
-</section>
-<!-- setting part end -->
 <!-- question & ans part start -->
 <section id="other">
 	<h1>FAQ</h1><hr class="notop">
@@ -1023,13 +847,13 @@
 		<li>2nd : Copy/Import offilie database to online server</li>
 		<li>3rd : Change config.php as the following</li>
 		<li>4th : define('SYNCHRONIZATION', true); in config.php</li>
-		<li>5th : define('SYNCSERVERURL', 'http://remotemodernpos/sync.php'); [adjust as your server configuration] in config.php</li>
+		<li>5th : define('SYNCSERVERURL', 'http://remoteFlexiblePos/sync.php'); [adjust as your server configuration] in config.php</li>
 		<li>6th : Make sure storage/logs/sql.txt file is exist and writable</li>
 		<li>7th : Crate a schedule task / cron job: <br>
-		C:/xampp/php/php.exe -f D:/www/modernpos/cron.php PUSHSQLTOREMOTESERVER <a href="#cron">How to?</a></li>
+		C:/xampp/php/php.exe -f D:/www/FlexiblePos/cron.php PUSHSQLTOREMOTESERVER <a href="#cron">How to?</a></li>
 	</ul>
 <p style="background-color:yellow;padding: 15px">***Note: 
-		C:/xampp/php/php.exe and D:/www/modernpos/cron.php [will be changed according to your server configuration]</p>
+		C:/xampp/php/php.exe and D:/www/FlexiblePos/cron.php [will be changed according to your server configuration]</p>
 
 
 
@@ -1052,7 +876,7 @@
 		<li>New
 		Action = Start a program
 		Program/Script = C:/xampp/php/php.exe [change as your need]
-		Add agruments(optional) = -f D:/www/modernpos/cron.php PUSHSQLTOREMOTESERVER</li>
+		Add agruments(optional) = -f D:/www/FlexiblePos/cron.php PUSHSQLTOREMOTESERVER</li>
 		<li>click on OK</li>
 		<li>click on OK</li>
 
@@ -1066,10 +890,10 @@
 		<li> First: Open the config file at root: config.php.</li>
 		<li> Adjust the value of DIR_BACKUP as your need, by default it is poinging to storage/backups directory...</li>
 		<li> define('DIR_BACKUP', DIR_STORAGE.'backups/');</li>
-		<li> Note: It's recommended to shift the storage directory to another location, i.e. if you have installed the system under D://www/modernpos then the storage directory can be located at D://www/storage</li>
+		<li> Note: It's recommended to shift the storage directory to another location, i.e. if you have installed the system under D://www/FlexiblePos then the storage directory can be located at D://www/storage</li>
 		<li> Second: Crate a schedule task / cron job, <a href="#cron">How to?</a></li>
-		<li> C:/xampp/php/php.exe -f D:/www/modernpos/cron.php DBBACKUP</li>
-		<li> Note: C:/xampp/php/php.exe and D:/www/modernpos/cron.php	[will be changed according to your server configuration]</li>
+		<li> C:/xampp/php/php.exe -f D:/www/FlexiblePos/cron.php DBBACKUP</li>
+		<li> Note: C:/xampp/php/php.exe and D:/www/FlexiblePos/cron.php	[will be changed according to your server configuration]</li>
 	</ul>
 
 	<h3>04. How to restore database ?</h3>
@@ -1204,7 +1028,7 @@
 				<li>Code names of any store to where you want to insert the product </li>
 				<li>The code will be found here
 					<ul>
-						<li> http://yourdomain/modernpos/admin/store_single.php </li>
+						<li> http://yourdomain/FlexiblePos/admin/store_single.php </li>
 						<li> General tab</li>
 						<li> Code Name</li>
 						<li> Code name must be comma seperated like this- store1,store2,store3</li>
