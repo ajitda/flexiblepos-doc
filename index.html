@@ -135,6 +135,12 @@
 					Reports 
 				</a>
 			</li>
+			<li class="page-scroll">
+				<a href="#updates">
+					<i class="fa fa-star margin"></i>
+					Updates 
+				</a>
+			</li>
 		</ol>
 		<div id="documenter_copyright">
 		made with the <a href="http://rxa.li/documenter">Documenter v2.1</a> 
@@ -174,7 +180,6 @@
 	<h1>Installation Process</h1><hr class="notop">
 	<h3>Pre-Requirements</h3>
 	<ul>
-		<li class="vimportant">Internet connection(Mandatory)</li>
 		<li class="vimportant">Create a new database , Make sure database is completely blank. Import the flexiblepos_db.sql in the created database without error.</li>
 		<li class="vimportant">if you install it in subdirectory ,change the subdirectory value in config.php . <code>define('SUBDIRECTORY', 'FlexiblePos');</code> </li>
 		<li>The maximum execution time of your server can't be less than 5 minutes. You may update php.ini file for this</li>
@@ -378,39 +383,38 @@
 <section id="reports">
 	<h1>Reports</h1>
 
-	<p>Every shop may arrange with a bunch of Suppliers which contain the product. The software permits to create the Supplier as well as you can edit, delete your creating supplier.</p>
+	<p>In this report section you will get income report, expense report daily and monthly and daily report, daily report summary.</p>
 
 	<h3>Income Report</h3>
 	<ul>
-		<li> Dashboard > Supplier > fill up the form under "Add New Supplier" with valid information > save</li>
-		<li> After successfully creating a new supplier will be shown under the "Supplier list" section</li>
-		<li> From supplier list you will be able to buy product by click buy button.</li>
+		<li> You will get income report in Dashboard > reports > income report</li>
+		<li> Select all reports of a month select month and year.</li>
+		<li> For getting monthly report generally.</li>
 	</ul>
 
 	<h3>Expense Report</h3>
 	<ul>
-		<li> Dashboard > Supplier > All supplier will be shown under " Supplier List"</li>
-		<li> Click on the view button of a supplier. </li>
-		<li> You can see all invoice and more info that you bought from that buyer</li>
-		<li> You will get a lifetime history of the supplier.</li>
+		<li> You will get income report in Dashboard > reports > expense report</li>
+		<li> Select all reports of a month select month and year.</li>
+		<li> For getting monthly report generally.</li>
 	</ul>
 
 	<h3>Daily Report</h3>
 	<ul>
-		<li> Dashboard > Supplier > All supplier will be shown under the "Supplier List"</li>
-		<li> Click on the edit button of a supplier item > a floating modal window will pop up > change information and Click on the Update button</li>
-		<li> Click on the Delete button of a supplier item > a floating modal window will pop up > select a method > delete</li>
+		<li> You will get details of daily debit credit in the Dashboard > reports > Daily report</li>
+		<li> You can get date wise result by selecting a date in the dropdown</li>
+		<li> You will get the final balance of the day.</li>
+		<li> ***You should close a daily report to get report summary correctly.</li>
 	</ul>
 	<h3>Report Summary</h3>
 	<ul>
-		<li> Dashboard > Supplier > All supplier will be shown under the "Supplier List"</li>
-		<li> Click on the edit button of a supplier item > a floating modal window will pop up > change information and Click on the Update button</li>
-		<li> Click on the Delete button of a supplier item > a floating modal window will pop up > select a method > delete</li>
+		<li> You will get daily report summary in Dashboard > Supplier > daily report summary</li>
+		<li> You can delete a report summary.</li>
 	</ul>
 </section>
 <!--supplier part end-->
 
-<!-- cretit start -->
+	<!-- cretit start -->
 	<section id="credits">
 		<h1>Credits</h1><hr class="notop">
 		<p>
@@ -462,6 +466,15 @@
 		<strong>ITsolution24.com</strong></p>
 	</section>
 	<!-- credit end -->
+	<section id="updates">
+		<h1>Update</h1><hr class="notop">
+		<p>For update you should follow the below step</p>
+		<ul>
+			<li>Copy the update files in your current directory.</li>
+			<li>Go to your project directory and run the command "Php artisan migrate"</li>
+			<li>Then you will get all the update features</li>
+		</ul>
+	</section>
 	</div>
 	</div>
 	<script src="assets/js/script.js"></script>
